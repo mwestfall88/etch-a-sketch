@@ -45,6 +45,10 @@ $(document).ready(function(){
 
 	$('button').click(function(){
 		console.log("click!");
+		$('.game').addClass("shake shake-constant shake-slow");
+		setTimeout(function(){
+			$('.game').removeClass("shake shake-constant shake-slow");
+		}, 1200);
 		$('.container').empty();
 	});
 

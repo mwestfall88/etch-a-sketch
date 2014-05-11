@@ -11,6 +11,7 @@
 	<p>style.css  - Static Styling</p>
 	<p>script.js - Javascript source which adds/removes HTML and CSS elements</p>
 	<p>jQuery-2.1.1.js - <a href = "http://jquery.com/">jQuery</a> Javascript library</p>
+	<p>csshake.min.css - Classes to shake CSS objects.  Written by <a href="https://github.com/elrumordelaluz/csshake">elrumordelaluz</a>.
 <br>
 
 <h2>Licensing</h2>
