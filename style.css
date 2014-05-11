@@ -1,0 +1,85 @@
+
+div {
+	margin: 0;
+	padding: 0;
+}
+
+.buttons{
+	margin-top: 20px;
+	position: fixed;
+	width: 300px;
+	display: inline-block;
+}
+
+#foot{
+	display: block;
+}
+
+button{
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	padding: 15px;
+	background-color: #B89470;
+	font-family: verdana, sans-serif;
+	font-size: 15px;
+	border-radius: 7px;
+}
+
+h2{
+	text-align: center;
+	font-family: verdana, sans-serif;
+}
+
+ol{
+	text-align: left;
+	font-family: verdana, sans-serif;
+	font-size: 12px;
+}
+
+.game{
+	width: 800px;
+	position: fixed;
+	margin: auto;
+	margin-left: 300px;
+}
+
+.top{
+	border-radius: 30px 30px 0 0 ;
+	background-color: red;
+	height: 40px;
+	border: 0px dashed yellow;
+	margin: auto;
+	width: 620px;
+
+}
+
+h1{
+	font-size: 50px;
+	font-family: "Times New Roman";
+	font-style: italic;
+	color: white;
+	text-align: center;
+}
+
+.top, .container, .box{ padding: 1px }
+
+.container{
+	
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	background-color: #EBEBEB;
+	border: 60px solid red;
+	padding-bottom: 10px;  /*added this to stop pixels from running off the screen. Not sure why this is happening*/
+}
+
+.row{
+	width: auto;
+}
+
+.box{
+	position: relative;
+	display: inline-block;
+	margin: 1px;
+}
