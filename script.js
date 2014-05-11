@@ -57,12 +57,14 @@ $(document).ready(function(){
 	});
 
 	$('#resChange').click(function(){
-		/*console.log("click!");
-		$('.container').empty();*/
 		haveSize = false;
 		while (haveSize === false){
+			oldSize = size;
 			size = prompt("Please enter a grid size from 1-128");
 			if (size > 0 && size <= 128){haveSize = true}
+			else if(size === null){
+				size = oldSize;
+				haveSize = true  }
 			else {alert("The number you entered is outside the range!")};
 		};	
 		buildEtch(size);
