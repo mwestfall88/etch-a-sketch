@@ -1,3 +1,7 @@
+body{
+	background-color: #FFCC66;
+}
+
 
 div {
 	margin: 0;
@@ -23,14 +27,14 @@ div {
 }
 
 a:link{
-	color: #2952A3;
+	color: #FF6600;
 	text-decoration: none;
 }
 a:hover{
 	text-decoration: underline;
 }
 a:visited{
-	color: #2952A3;
+	color: #FF6600;
 	text-decoration: none;
 }
 
@@ -44,6 +48,8 @@ button{
 	font-size: 15px;
 	border-radius: 7px;
 }
+
+button:hover {text-decoration: underline;}
 
 h2{
 	text-align: center;
@@ -69,7 +75,7 @@ ol{
 	height: 40px;
 	margin: auto;
 	width: 620px;
-	box-shadow: 10px 10px 5px #888888;
+	box-shadow: 10px 10px 0px 3px #888888;
 
 }
 
@@ -81,7 +87,7 @@ h1{
 	text-align: center;
 }
 
-.top, .container, .box{ padding: 1px }
+.top, .container, .box, .bottom{ padding: 1px }
 
 .container{
 	
@@ -90,8 +96,34 @@ h1{
 	margin: auto;
 	background-color: #EBEBEB;
 	border: 60px solid #DD2900;
-	box-shadow: 10px 10px 5px #888888;
+	box-shadow: 10px 10px 0px 3px #888888;
 	padding-bottom: 10px;  /*added this to stop pixels from running off the screen. Not sure why this is happening*/
+}
+
+.bottom{
+	width: 620px;
+	height: 40px;
+	background-color: #DD2900;
+	margin: auto;
+	border-radius: 0 0 30px 30px;
+	box-shadow: 10px 10px 0px 3px #888888;
+}
+
+.knob{
+	position: relative;
+	display: inline-block;
+	height: 70px;
+	width: 70px;
+	border-radius: 100%;
+	background-color: white;
+	margin-left: 100px;
+	margin-top: -50px;
+	border: 4px ridge gray;
+}
+
+#knobSpace{
+	display: inline-block;
+	width: 168px;
 }
 
 .row{
