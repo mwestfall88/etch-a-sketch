@@ -78,10 +78,20 @@ $(document).ready(function(){
 		}
 		return colorOut;
 	};
+
+	$('#advanced').click(function(){
+		buildEtch(size);
+		$('.box').css('opacity',0);
+		$('.box').hover(function(){
+			console.log($(this).css('opacity'));
+			$(this).css('opacity', function(){
+				return parseFloat($(this).css('opacity')) + 0.2;
+			});
+		});
+	});
 	
 
 	$('#crazy').click(function(){
-		console.log(randColor());
 		buildEtch(size);
 		$('.box').hover(function(){
 			$(this).css('background-color', randColor());
