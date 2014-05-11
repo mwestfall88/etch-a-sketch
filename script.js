@@ -73,7 +73,7 @@ $(document).ready(function(){
 			colorOut += colArr[Math.floor(Math.random()*15)];
 		}
 		return colorOut;
-		};
+	};
 	
 
 	$('#crazy').click(function(){

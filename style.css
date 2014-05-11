@@ -12,7 +12,26 @@ div {
 }
 
 #foot{
+	margin-top: 70px;
 	display: block;
+}
+
+#foot p{
+	text-align: center;
+	font-family: verdana, sans-serif;
+	font-size: 12px;
+}
+
+a:link{
+	color: #2952A3;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+a:visited{
+	color: #2952A3;
+	text-decoration: none;
 }
 
 button{
@@ -46,9 +65,8 @@ ol{
 
 .top{
 	border-radius: 30px 30px 0 0 ;
-	background-color: red;
+	background-color: #DD2900;
 	height: 40px;
-	border: 0px dashed yellow;
 	margin: auto;
 	width: 620px;
 
@@ -70,7 +88,7 @@ h1{
 	height: 500px;
 	margin: auto;
 	background-color: #EBEBEB;
-	border: 60px solid red;
+	border: 60px solid #DD2900;
 	padding-bottom: 10px;  /*added this to stop pixels from running off the screen. Not sure why this is happening*/
 }
 
