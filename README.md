@@ -5,7 +5,7 @@
 </p>
 <p> This game was written in html, css, javascript, and jQuery-2.1.1</p>
 <p> Written by <a href="https://github.com/mwestfall88"> Mark Westfall</a></p>
-
+<p>Play the game <a href="http://mwestfall88.github.io/etch-a-sketch">here</a>.</p>
 <h2>Description of Files<h2>
 	<p>index.html - The Static HTML structure</p>
 	<p>style.css  - Static Styling</p>
