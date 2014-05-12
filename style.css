@@ -1,3 +1,5 @@
+
+
 body{
 	background-color: #FFCC66;
 }
@@ -87,7 +89,8 @@ h1{
 	text-align: center;
 }
 
-.top, .container, .box, .bottom{ padding: 1px }
+.top,  .box, .bottom{ padding: 1px }
+
 
 .container{
 	
