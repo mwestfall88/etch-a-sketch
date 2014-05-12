@@ -14,5 +14,9 @@
 	<p>csshake.min.css - Classes to shake CSS objects.  Written by <a href="https://github.com/elrumordelaluz/csshake">elrumordelaluz</a>.
 <br>
 
+<h2>Browser Suppor</h2>
+	<p>Etch-a-Sketch has been tested on Chome 34, Firefox 29, and Safari 7.0.3<p>
+	<p>Etch-a-Sketch has not been tested on IE or Opera.  Let me know how it works!<p>
+
 <h2>Licensing</h2>
 <p>This Etch-a-Sketch game is licensed under the <a href="http://opensource.org/licenses/MIT">MIT license.</a></p>
