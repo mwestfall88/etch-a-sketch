@@ -9,25 +9,35 @@ $(document).ready(function(){
 			$(".container").append("<div class='row'></div>");
 		};
 
+		//This function was necessary to run the script in Firefox 29.  Otherwise boxMargin and other vars return NaN
+
+		var checkBrowser = function(str){
+			if (navigator.userAgent.search("Firefox") >= 0){str += "-top" } ;
+			console.log(str);
+			return str;
+		};
+
 		var rowHeight = $('.container').height()/numRows;
-		var rowWidth = $(".container").width() - parseInt($(".container").css("padding"));
+		var rowWidth = $(".container").width() - parseFloat($(".container").css(checkBrowser("padding")));
 		$(".row").css("height", rowHeight);
 		$(".row").css("width", rowWidth);
 	
 
 		for (var i = 0; i < numCols; i++){
-			$(".container").children().append("<div class='box'></div>");
+			$(".container").children().append('<div class="box"></div>');
 		};
 
-		var boxMargin = $('.box').css('margin');
-		var boxPadding = $('.box').css('padding');
-		var boxBorder = $('.box').css('border-width');
+		var boxMargin = $('.box').css(checkBrowser('margin'));
+		var boxPadding = $('.box').css(checkBrowser('padding'));
+		var boxBorder = $('.box').css(checkBrowser('border')+"-width");
 		var spacing = 2*(parseInt(boxMargin) + parseInt(boxPadding) + parseInt(boxBorder));
 		var boxWidth = rowWidth/numCols - spacing;
 		var boxHeight = rowHeight - spacing;
+		console.log(boxMargin)
 
-		$(".box").css("width", boxWidth);
-		$(".box").css("height", boxHeight);
+
+		$(".box").css("width", boxWidth.toString());
+		$(".box").css("height", boxHeight.toString());
 
 		//add hover effects
 		$('.box').hover(function(){
@@ -44,7 +54,6 @@ $(document).ready(function(){
 	//Reset game using "Shake!" button
 
 	$('button').click(function(){
-		console.log("click!");
 		$('.game').addClass("shake shake-constant shake-slow");
 		setTimeout(function(){
 			$('.game').removeClass("shake shake-constant shake-slow");
